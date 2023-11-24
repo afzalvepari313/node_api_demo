@@ -8,11 +8,6 @@ app.get('/', (req, res) => {
   res.send('Server is up and running')
 })
 
-app.get('/login', (req, res) => {
-  res.send('You are on the login page')
-})
-
-
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`)
 })
