@@ -7,7 +7,12 @@ app.use(express.json)
 app.get('/', (req, res) => {
   res.send('Server is up and running')
 })
-
+app.get('/login', (req, res) => {
+  res.send('You are on the login page')
+})
+app.get('/dashboard', (req, res) => {
+  res.send('<h1> You are on Dashboard Page</h1>')
+})
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`)
 })
