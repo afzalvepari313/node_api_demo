@@ -1,15 +1,15 @@
 const express = require('express');
 const { sequelize } = require('./db');
 const app = express()
-const port = 4100
+const port = 4646
 app.use(express.json)
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Server is up and running')
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Server is listening on port ${port}`)
 })
 
 
